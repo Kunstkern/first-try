@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FenkArtellier</title>
+    <link rel="stylesheet" href="FenkArtellier.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Major+Mono+Display&display=swap" rel="stylesheet"> 
+</head>
+
+<body>  
+    <header>
+        <div class="logo">FenkArtellier</div>
+        <div class="nav"></div>
+        
+    </header>
+   
+    <ul class="topnav">
+        <li><a class="active" href="FenkArtellier.html">Home</a></li>
+        <li><a href="Page1.html">Video</a></li>
+        <li><a href="Page2.html">Page2</a></li>
+        <li class="right"><a href="About.html">About</a></li>
+    </ul>
+
+  <h1>Fotografie & Expressionismus</h1>
+
+  <img src="images/Fenk-Art-Foto-18.jpg">
+  <img id="rcorners3">
+
+  <h2><span>Lars Erik Fenkart</span></h2>
+
+  <div class="row">
+    <div class="column">
+      <img src="images/Pic1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="images/Pic2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="images/Pic3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="images/Pic5.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="images/Pic1.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/Pic2.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="images/Pic3.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/Pic5.jpg" style="width:100%">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+  
+      <div class="column">
+        <img class="demo cursor" src="images/Pic1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Bridge-to-Nature">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/Pic2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Moon">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/Pic3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Fibonacci">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/Pic5.jpg" style="width:100%" onclick="currentSlide(4)" alt="Lars-E. Fenkart">
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div id="textstil">
+    <h2 style="text-align:center">Maybe we'll go to Hell, but a<span>t least all of our </span>Friends will be there!</h2>
+    <p1>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+      laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+      ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
+       in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis 
+       at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis 
+       dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+      nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+      veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+      Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+      vel illum dolore eu.
+    </p1>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <p>copyright © 2021, Artcore-Connection</p>  
+  </footer>
+
+
+</script>
+<script src="FenkArtellier.js"></script>
+</body>
+</html>
